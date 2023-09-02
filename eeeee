@@ -1,0 +1,55 @@
+crear un proyecto para node.js
+
+nop init // para iniciar un proyecto en node
+
+//forms
+package name: (node3) clase-3
+version: (1.0.0) 0.0.1
+description: practicar nodejs con mis amigos
+entry point: (index.js) app.js
+
+DESPUES DE ISC
+
+NAME
+VERSION
+MAIN
+AUTHON
+
+
+esta la carpeta raiz
+
+
+const express = require ('express')
+const app = express()
+const port = 3000
+
+
+
+
+app.get('/',(req, res) => {
+    res.send('Hola mundo')
+})
+
+app.listen(port, () => {
+    console.log('ingrese a http://localhost:3000')
+})
+
+
+
+
+
+// crear la ruta//
+const express = require ('express')
+const app = express()
+const port = 3000
+
+app.get('/',(req, res) => {
+    res.send('Hola mundo')
+})
+
+app.listen(port, () => {
+    console.log('ingrese a http://localhost:3000')
+})
+
+c//con este codigo preparas para exportar el codigo
+

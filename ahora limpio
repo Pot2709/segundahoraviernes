@@ -1,0 +1,44 @@
+# segundahoraviernes
+
+//desde app//
+const express = require ('express')
+const app = express()
+const port = 3000
+
+
+
+app.get('/',(req, res) => {
+    res.send('Hola mundo')
+})
+
+const cursos = require('./cursos')
+app.use('/cursos', cursos)
+
+const alumnos = require('./alumnos')
+app.use('/alumnos', alumnos)
+
+
+app.listen(port, () => {
+    console.log('ingrese a http://localhost:3000')
+})
+
+
+
+//el crud//
+const express = require ('express')
+const router = express.Router()
+
+router.get('/registro', (req, res) => {
+    res.send ('se agrego correctamente')
+})
+
+
+router.get('/listado', (req, res) => {
+    res.send (' hecho')
+})
+
+router.get('/eliminar', (req, res) => {
+    res.send ('se elimino correctamente')
+})
+module.exports = router
+
